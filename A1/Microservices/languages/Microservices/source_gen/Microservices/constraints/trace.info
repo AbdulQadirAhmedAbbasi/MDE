@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="10,0,20,0" name="Microservices.constraints.ConstraintsAspectDescriptor" />
+    </file>
+    <file name="GeneratedFeedbackAspectConstraints.java">
+      <unit at="10,0,17,0" name="Microservices.constraints.GeneratedFeedbackAspectConstraints" />
+    </file>
+    <file name="GeneratedRulesConstraintsAspect.java">
+      <unit at="14,0,30,0" name="Microservices.constraints.GeneratedRulesConstraintsAspect" />
+    </file>
+  </root>
+  <root nodeRef="r:468ba8cf-600f-433a-bdb1-b531836f79ca(Microservices.constraints)/4635545526457645303">
+    <file name="Microservice_ConstraintRules.java">
+      <node id="4635545526457645303" at="24,0,25,0" concept="3" trace="CONCEPT" />
+      <node id="4635545526457645314" at="26,0,27,0" concept="3" trace="check_id4635545526457645314" />
+      <node id="4635545526457645303" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="4635545526457645303" at="32,43,33,17" concept="2" />
+      <node id="4635545526457645314" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="4635545526457645314" at="38,0,39,0" concept="3" trace="ID_MicroserviceHealth " />
+      <node id="4635545526457645314" at="40,39,41,96" concept="4" />
+      <node id="4635545526457645314" at="45,63,46,109" concept="2" />
+      <node id="4635545526457645314" at="50,67,51,18" concept="2" />
+      <node id="4635545526457645303" at="55,46,56,19" concept="4" />
+      <node id="4635545526457645303" at="60,0,61,0" concept="3" trace="Health$Gh6l" />
+      <node id="4635545526457645314" at="40,0,43,0" concept="0" trace="Rule_MicroserviceHealth #()V" />
+      <node id="4635545526457645303" at="55,0,58,0" concept="0" trace="Microservice_ConstraintRules#()V" />
+      <node id="4635545526457645314" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="4635545526457645314" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="4635545526457645303" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="4635545526457645303" at="32,43,33,17" />
+      <scope id="4635545526457645314" at="40,39,41,96" />
+      <scope id="4635545526457645314" at="45,63,46,109" />
+      <scope id="4635545526457645314" at="50,67,51,18" />
+      <scope id="4635545526457645303" at="55,46,56,19" />
+      <scope id="4635545526457645314" at="40,0,43,0" />
+      <scope id="4635545526457645303" at="55,0,58,0" />
+      <scope id="4635545526457645314" at="44,0,48,0">
+        <var name="context" id="4635545526457645314" />
+      </scope>
+      <scope id="4635545526457645314" at="49,0,53,0">
+        <var name="context" id="4635545526457645314" />
+      </scope>
+      <scope id="4635545526457645303" at="30,0,35,0" />
+      <unit id="4635545526457645303" at="59,0,62,0" name="Microservices.constraints.Microservice_ConstraintRules$PROPS" />
+      <unit id="4635545526457645314" at="36,0,54,0" name="Microservices.constraints.Microservice_ConstraintRules$Rule_MicroserviceHealth " />
+      <unit id="4635545526457645303" at="23,0,63,0" name="Microservices.constraints.Microservice_ConstraintRules" />
+    </file>
+    <file name="Microservice_ConstraintsFeedback.java">
+      <node id="4635545526457645303" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="4635545526457645313" at="25,73,26,112" concept="2" />
+      <node id="4635545526457645303" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="4635545526457645303" at="32,45,33,19" concept="4" />
+      <node id="4635545526457645303" at="38,58,39,30" concept="2" />
+      <node id="4635545526457645303" at="32,0,35,0" concept="0" trace="Microservice_ConstraintsFeedback#()V" />
+      <node id="4635545526457645313" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="4635545526457645303" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="4635545526457645313" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_lv5hxi_a" />
+      <scope id="4635545526457645313" at="25,73,26,112" />
+      <scope id="4635545526457645303" at="32,45,33,19" />
+      <scope id="4635545526457645303" at="38,58,39,30" />
+      <scope id="4635545526457645303" at="32,0,35,0" />
+      <scope id="4635545526457645313" at="23,0,28,0">
+        <var name="context" id="4635545526457645313" />
+      </scope>
+      <scope id="4635545526457645303" at="36,0,41,0" />
+      <unit id="4635545526457645313" at="22,111,28,3" name="Microservices.constraints.Microservice_ConstraintsFeedback$1" />
+      <unit id="4635545526457645303" at="19,0,42,0" name="Microservices.constraints.Microservice_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:468ba8cf-600f-433a-bdb1-b531836f79ca(Microservices.constraints)/4635545526457716231">
+    <file name="Container_ConstraintRules.java">
+      <node id="4635545526457716231" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="4635545526457716238" at="25,0,26,0" concept="3" trace="check_id4635545526457716238" />
+      <node id="4635545526457716231" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="4635545526457716231" at="31,43,32,17" concept="2" />
+      <node id="4635545526457716238" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="4635545526457716238" at="37,0,38,0" concept="3" trace="ID_RestrictedPortNumber " />
+      <node id="4635545526457716238" at="39,41,40,98" concept="4" />
+      <node id="4635545526457716238" at="44,63,45,92" concept="2" />
+      <node id="4635545526457716238" at="49,67,50,18" concept="2" />
+      <node id="4635545526457716231" at="54,43,55,19" concept="4" />
+      <node id="4635545526457716231" at="59,0,60,0" concept="3" trace="Port$OgSA" />
+      <node id="4635545526457716238" at="39,0,42,0" concept="0" trace="Rule_RestrictedPortNumber #()V" />
+      <node id="4635545526457716231" at="54,0,57,0" concept="0" trace="Container_ConstraintRules#()V" />
+      <node id="4635545526457716238" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="4635545526457716238" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="4635545526457716231" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="4635545526457716231" at="31,43,32,17" />
+      <scope id="4635545526457716238" at="39,41,40,98" />
+      <scope id="4635545526457716238" at="44,63,45,92" />
+      <scope id="4635545526457716238" at="49,67,50,18" />
+      <scope id="4635545526457716231" at="54,43,55,19" />
+      <scope id="4635545526457716238" at="39,0,42,0" />
+      <scope id="4635545526457716231" at="54,0,57,0" />
+      <scope id="4635545526457716238" at="43,0,47,0">
+        <var name="context" id="4635545526457716238" />
+      </scope>
+      <scope id="4635545526457716238" at="48,0,52,0">
+        <var name="context" id="4635545526457716238" />
+      </scope>
+      <scope id="4635545526457716231" at="29,0,34,0" />
+      <unit id="4635545526457716231" at="58,0,61,0" name="Microservices.constraints.Container_ConstraintRules$PROPS" />
+      <unit id="4635545526457716238" at="35,0,53,0" name="Microservices.constraints.Container_ConstraintRules$Rule_RestrictedPortNumber " />
+      <unit id="4635545526457716231" at="22,0,62,0" name="Microservices.constraints.Container_ConstraintRules" />
+    </file>
+    <file name="Container_ConstraintsFeedback.java">
+      <node id="4635545526457716231" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="4635545526457716236" at="25,73,26,94" concept="2" />
+      <node id="4635545526457716231" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="4635545526457716231" at="32,42,33,19" concept="4" />
+      <node id="4635545526457716231" at="38,58,39,30" concept="2" />
+      <node id="4635545526457716231" at="32,0,35,0" concept="0" trace="Container_ConstraintsFeedback#()V" />
+      <node id="4635545526457716236" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="4635545526457716231" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="4635545526457716236" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_ruyzqm_a" />
+      <scope id="4635545526457716236" at="25,73,26,94" />
+      <scope id="4635545526457716231" at="32,42,33,19" />
+      <scope id="4635545526457716231" at="38,58,39,30" />
+      <scope id="4635545526457716231" at="32,0,35,0" />
+      <scope id="4635545526457716236" at="23,0,28,0">
+        <var name="context" id="4635545526457716236" />
+      </scope>
+      <scope id="4635545526457716231" at="36,0,41,0" />
+      <unit id="4635545526457716236" at="22,111,28,3" name="Microservices.constraints.Container_ConstraintsFeedback$1" />
+      <unit id="4635545526457716231" at="19,0,42,0" name="Microservices.constraints.Container_ConstraintsFeedback" />
+    </file>
+  </root>
+</debug-info>
+

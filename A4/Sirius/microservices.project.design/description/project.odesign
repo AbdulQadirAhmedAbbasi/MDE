@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="Environment" modelFileExtension="microservices">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Environment Diagram" domainClass="microservices::Environment" enablePopupBars="true">
+      <metamodel href="http://www.example.org/microservices#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="Server" doubleClickDescription="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='addVM']" domainClass="microservices::ServerNode">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="11" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/microservices.project.design/newicons/Server.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="VM" doubleClickDescription="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='addContainer']" domainClass="microservices::VirtualMachine">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="11" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/microservices.project.design/newicons/VirtualMachine.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Container" doubleClickDescription="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='addMicroservice']" domainClass="microservices::Container">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="11" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/microservices.project.design/newicons/Container.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Microservice" domainClass="microservices::Microservice">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="11" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/microservices.project.design/newicons/Microservice.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="serverHas" sourceMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Server']" targetMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='VM']" targetFinderExpression="feature:VirtualMachines">
+          <style sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="vmHas" sourceMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='VM']" targetMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']" targetFinderExpression="feature:Containers">
+          <style sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="containerHas" sourceMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']" targetMapping="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']" targetFinderExpression="feature:Microservice">
+          <style sizeComputationExpression="2" routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createServer" label="Server" nodeMappings="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Server']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="microservices::ServerNode" referenceName="ServerNodes"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="addVM" label="Server" mappings="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Server']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="microservices::VirtualMachine" referenceName="VirtualMachines" variableName="name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="addContainer" label="VM" mappings="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='VM']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="microservices::Container" referenceName="Containers" variableName="name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="addMicroservice" label="Container" mappings="//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="microservices::Microservice" referenceName="Microservice" variableName="name"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="microservices.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

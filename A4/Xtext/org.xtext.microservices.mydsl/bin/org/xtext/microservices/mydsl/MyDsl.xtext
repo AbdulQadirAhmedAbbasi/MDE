@@ -1,0 +1,64 @@
+grammar org.xtext.microservices.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/microservices/mydsl/MyDsl"
+
+EnvironmentModel returns EnvironmentModel:
+	environment=Environment;  //only zero or one enviroment can be initialised
+
+Environment returns Environment:
+	 'environment' name=ID
+	'{'
+		('id' '=' id=STRING ';')?
+		('name' '=' name=STRING ';')?
+		('type' '=' Type=EnvironmentType ';')?
+		('location' '=' name=STRING ';')?
+		('serverNodes' '=' '{' nodes+=ServerNode (',' nodes+=ServerNode)* '}' ';')? //only zero or many serverNodes can be initialised
+	'}';
+
+enum EnvironmentType returns EnvironmentType:
+			Development = 'Development' | Test = 'Test' | UAT = 'UAT' | Demo = 'Demo' | Production = 'Production';
+
+			
+ServerNode returns ServerNode:
+	'node' name=ID
+	'{'
+		('id' '=' id=STRING ';')?
+		('name' '=' name=STRING ';')?
+		('RAM' '=' name=STRING ';')?
+		('Processor' '=' name=STRING ';')?
+		('Disk' '=' name=STRING ';')?
+		('virtualMachines' '=' '{' vms+=VirtualMachine (',' vms+=VirtualMachine)* '}' ';')? 
+	'}';
+	
+VirtualMachine returns VirtualMachine:
+	'vm' name=ID
+	'{'
+		('id' '=' id=STRING ';')?
+		('name' '=' name=STRING ';')?
+		('type' '=' Type=VMType ';')?
+		('containers' '=' '{' dockers+=Container (',' dockers+=Container)* '}' ';')? 
+	'}';
+	
+enum VMType returns VMType:
+			Linux = 'Linux' | RedHat = 'RedHat' | Windows = 'Windows' | CentOS = 'CentOS';
+			
+Container returns Container:
+	'docker' name=ID
+	'{'
+		('id' '=' id=STRING ';')?
+		('name' '=' name=STRING ';')?
+		('IP' '=' name=STRING ';')?
+		('Port' '=' Port=INT  ';')?
+		('Microservice' '=' Microservice=Microservice ';')? //only zero or one microservice can be initialised inside one container
+	'}';
+	
+Microservice returns Microservice:
+	'service' name=ID
+	'{'
+		('id' '=' id=STRING ';')?
+		('name' '=' name=STRING ';')?
+		('type' '=' Type=MicroserviceType ';')?
+	'}';
+	
+enum MicroserviceType returns MicroserviceType:
+			Internal = 'Internal' | External = 'External';

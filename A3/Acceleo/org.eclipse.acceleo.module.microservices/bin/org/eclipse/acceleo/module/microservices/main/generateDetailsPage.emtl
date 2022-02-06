@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateDetailsPage" nsURI="org::eclipse::acceleo::module::microservices::main::generateDetailsPage" startHeaderPosition="29" endHeaderPosition="96">
+    <input>
+      <takesTypesFrom href="http://www.example.org/microservices#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateVirtualMachineDetailsPage" visibility="Public" main="true">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;head>&#xA;&#x9;&#x9;&#x9;&lt;style>&#xA;&#x9;&#x9;&#x9;&#x9;table, th, td {&#xA;&#x9;&#x9;&#x9;&#x9;  border: 1px solid black;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;label {&#xA;&#x9;&#x9;&#x9;&#x9;  font-weight:bold&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;h1 {&#xA;&#x9;&#x9;&#x9;   &#x9;  width:500px;&#xA;&#x9;&#x9;&#x9;      margin: 0 auto;&#xA;&#x9;&#x9;&#x9;      background: gray;&#xA;&#x9;&#x9;&#x9;      text-align: center;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;a.button {&#xA;&#x9;&#x9;&#x9;&#x9;    -webkit-appearance: button;&#xA;&#x9;&#x9;&#x9;&#x9;    -moz-appearance: button;&#xA;&#x9;&#x9;&#x9;&#x9;    appearance: button;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;    text-decoration: none;&#xA;&#x9;&#x9;&#x9;&#x9;    color: initial;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;background: gray;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;float: right;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;margin-left: 5px;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;border-radius: 3px;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;padding: 5px;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;.red-dot &#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;   height: 10px;&#xA;&#x9;&#x9;&#x9;&#x9;   width: 10px;&#xA;&#x9;&#x9;&#x9;&#x9;   background-color: red;&#xA;&#x9;&#x9;&#x9;&#x9;   border-radius: 50%;&#xA;&#x9;&#x9;&#x9;&#x9;   display: inline-block;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;.green-dot &#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;   height: 10px;&#xA;&#x9;&#x9;&#x9;&#x9;   width: 10px;&#xA;&#x9;&#x9;&#x9;&#x9;   background-color: green;&#xA;&#x9;&#x9;&#x9;&#x9;   border-radius: 50%;&#xA;&#x9;&#x9;&#x9;&#x9;   display: inline-block;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&lt;/style>&#x9;&#xA;&#x9;&#x9;&#x9;&lt;title>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Details&lt;/title>&#xA;&#x9;&#x9;&lt;/head>&#xA;&#x9;&#x9;&lt;body>&#xA;&#x9;&#x9;&#x9;&lt;h1>&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; Vitual Machine&#xA;&#x9;&#x9;&#x9;&lt;h2>Details&lt;/h2>&#xA;&#x9;&#x9;&#x9;&lt;label>Name : &lt;/label> &lt;span>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/span> &lt;br>&#xA;&#x9;&#x9;&#x9;&lt;label>Type : &lt;/label> &lt;span>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EEnum" href="http://www.example.org/microservices#//VMType"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//VirtualMachine/Type"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/span> &lt;br>&#xA;&#x9;&#x9;&#x9;&lt;div>It consists of &lt;strong>"/>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          <source xsi:type="ocl.ecore:IteratorExp" name="collectNested" eType="/12/Sequence(Microservice)">
+            <source xsi:type="ocl.ecore:PropertyCallExp" eType="/12/OrderedSet(Container)">
+              <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/microservices#//VirtualMachine/Containers"/>
+            </source>
+            <body xsi:type="ocl.ecore:TypeExp" eType="/13/Microservice">
+              <referredType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+            </body>
+            <iterator xsi:type="ocl.ecore:Variable" name="temp1">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+            </iterator>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/size"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/strong> microservice/s.&lt;/div>&#xA;&#xA;&#x9; &#x9;&#x9;&lt;h2>Containers&lt;/h2>&#xA;&#x9;&#x9;&#x9;&lt;table>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;thead>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;tr>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>Name&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>IP&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>Port&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>BaseURI&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>Microservice&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th>isMicroserviceLive&lt;/th>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;tr>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/thead>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;tbody>&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateContainerRow">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="docker" referredVariable="/0/generateVirtualMachineDetailsPage/%.1/%.11/docker">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="docker">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/12/OrderedSet(Container)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/microservices#//VirtualMachine/Containers"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/tbody>&#xA;&#x9;&#x9;&#x9;&lt;/table>&#xA;&#x9;&#x9;&lt;/body>&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/replaceAll">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aVirtualMachine" referredVariable="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".html">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <parameter name="aVirtualMachine">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateContainerRow">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;tr>&#xA;&#x9;&lt;td>"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&lt;td>"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Container/IP"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&lt;td>"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Container/Port"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;    &lt;td>"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Container/BaseURI"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&lt;td>&#xA;&#x9;&#x9;"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/microservices#//Container/Microservice"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;a target=&quot;_blank&quot; href=&quot;"/>
+      <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/replaceAll">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/microservices#//Container/Microservice"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </source>
+        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".html">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; class=&quot;button&quot;>Details&lt;/a>&#xA;&#x9;&#x9;"/>
+      <body xsi:type="mtl:TemplateInvocation" definition="/0/generateMicroserviceDetailsPage">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.example.org/microservices#//Container/Microservice"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&lt;/td>&#xA;&#x9;&#xA;&#x9;&lt;td style=&quot;text-align:center&quot;>&#xA;"/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;&lt;span class=&quot;green-dot&quot; title=&quot;"/>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.example.org/microservices#//Container/isMicroserviceLive"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;>&lt;/span>&lt;/td>&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.example.org/microservices#//Container/isMicroserviceLive"/>
+        </ifExpr>
+        <else>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="        &#x9;&lt;span class=&quot;red-dot&quot; title=&quot;"/>
+          <body xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aContainer" referredVariable="/0/generateContainerRow/aContainer">
+              <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.example.org/microservices#//Container/isMicroserviceLive"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;>&lt;/span>&lt;/td>&#xA;"/>
+        </else>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/tr>"/>
+      <parameter name="aContainer">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateMicroserviceDetailsPage" visibility="Public" main="true">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&lt;head>&#xA;&#x9;&#x9;&#x9;&lt;style>&#xA;&#x9;&#x9;&#x9;&#x9;label {&#xA;&#x9;&#x9;&#x9;&#x9;  font-weight:bold&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;h1 {&#xA;&#x9;&#x9;&#x9;   &#x9;  width:500px;&#xA;&#x9;&#x9;&#x9;      margin: 0 auto;&#xA;&#x9;&#x9;&#x9;      background: gray;&#xA;&#x9;&#x9;&#x9;      text-align: center;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&lt;/style>&#x9;&#xA;&#x9;&#x9;&#x9;&lt;title>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Details&lt;/title>&#xA;&#x9;&#x9;&lt;/head>&#xA;&#x9;&#x9;&lt;body>&#xA;&#x9;&#x9;&#x9;&lt;h1>&quot;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; Microservice&#xA;&#x9;&#x9;&#x9;&lt;h2>Details&lt;/h2>&#xA;&#x9;&#x9;&#x9;&lt;label>Name : &lt;/label> &lt;span>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/span> &lt;br>&#xA;&#x9;&#x9;&#x9;&lt;label>Type : &lt;/label> &lt;span>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EEnum" href="http://www.example.org/microservices#//MicroserviceType"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Microservice/Type"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/span> &lt;br>&#xA;&#x9;&#x9;&#x9;&lt;label>Health : &lt;/label> &lt;span>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+            <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Microservice/Health"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/span> &lt;br>&#xA;&#x9;&#x9;&lt;/body>&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/oclstdlib_String_Class/replaceAll">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aMicroservice" referredVariable="/0/generateMicroserviceDetailsPage/aMicroservice">
+                <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.example.org/microservices#//Named/name"/>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".html">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+      <parameter name="aMicroservice">
+        <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="replaceAll">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+        <eParameters name="replacement">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="+">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateVirtualMachineDetailsPage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateVirtualMachineDetailsPage"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aVirtualMachine">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateContainerRow">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateContainerRow"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aContainer">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateMicroserviceDetailsPage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateMicroserviceDetailsPage"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aMicroservice">
+          <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="microservices_VirtualMachine_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/microservices#//VirtualMachine"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="microservices_Container_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/microservices#//Container"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="microservices_Microservice_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.example.org/microservices#//Microservice"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Container)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(Microservice)" instanceClassName="java.util.List" elementType="/13/Microservice"/>
+  </ecore:EPackage>
+  <ecore:EPackage name="types">
+    <eClassifiers xsi:type="ocl.ecore:TypeType" name="Microservice">
+      <referredType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//VirtualMachine"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Container"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.example.org/microservices#//Microservice"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateVirtualMachineDetailsPage">
+      <details key="start" value="100"/>
+      <details key="end" value="1951"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateVirtualMachineDetailsPage/%">
+      <details key="start" value="186"/>
+      <details key="end" value="188"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateVirtualMachineDetailsPage/%.1">
+      <details key="start" value="208"/>
+      <details key="end" value="1937"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateVirtualMachineDetailsPage/%.1/%">
+      <details key="start" value="284"/>
+      <details key="end" value="1142"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateVirtualMachineDetailsPage/%.1/%.1">
+      <details key="start" value="1143"/>
+      <details key="end" value="1163"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateVirtualMachineDetailsPage/%.1/%.1/aVirtualMachine">
+      <details key="start" value="1143"/>
+      <details key="end" value="1158"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateVirtualMachineDetailsPage/%.1/%.2">
+      <details key="start" value="1165"/>
+      <details key="end" value="1209"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateVirtualMachineDetailsPage/%.1/%.3">
+      <details key="start" value="1210"/>
+      <details key="end" value="1230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateVirtualMachineDetailsPage/%.1/%.3/aVirtualMachine">
+      <details key="start" value="1210"/>
+      <details key="end" value="1225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateVirtualMachineDetailsPage/%.1/%.4">
+      <details key="start" value="1232"/>
+      <details key="end" value="1301"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateVirtualMachineDetailsPage/%.1/%.5">
+      <details key="start" value="1302"/>
+      <details key="end" value="1322"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateVirtualMachineDetailsPage/%.1/%.5/aVirtualMachine">
+      <details key="start" value="1302"/>
+      <details key="end" value="1317"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateVirtualMachineDetailsPage/%.1/%.6">
+      <details key="start" value="1324"/>
+      <details key="end" value="1369"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateVirtualMachineDetailsPage/%.1/%.7">
+      <details key="start" value="1370"/>
+      <details key="end" value="1390"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateVirtualMachineDetailsPage/%.1/%.7/aVirtualMachine">
+      <details key="start" value="1370"/>
+      <details key="end" value="1385"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateVirtualMachineDetailsPage/%.1/%.8">
+      <details key="start" value="1392"/>
+      <details key="end" value="1436"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateVirtualMachineDetailsPage/%.1/%.9">
+      <details key="start" value="1437"/>
+      <details key="end" value="1504"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateVirtualMachineDetailsPage/%.1/%.9/collectNested">
+      <details key="start" value="1437"/>
+      <details key="end" value="1494"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateVirtualMachineDetailsPage/%.1/%.9/collectNested/%">
+      <details key="start" value="1437"/>
+      <details key="end" value="1463"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateVirtualMachineDetailsPage/%.1/%.9/collectNested/%/aVirtualMachine">
+      <details key="start" value="1437"/>
+      <details key="end" value="1452"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateVirtualMachineDetailsPage/%.1/%.9/collectNested/%.1">
+      <details key="start" value="1481"/>
+      <details key="end" value="1493"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateVirtualMachineDetailsPage/%.1/%.9/collectNested/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateVirtualMachineDetailsPage/%.1/%.10">
+      <details key="start" value="1506"/>
+      <details key="end" value="1780"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateVirtualMachineDetailsPage/%.1/%.11">
+      <details key="start" value="1784"/>
+      <details key="end" value="1887"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%">
+      <details key="start" value="1840"/>
+      <details key="end" value="1845"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%.1">
+      <details key="start" value="1846"/>
+      <details key="end" value="1874"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%.1/docker">
+      <details key="start" value="1867"/>
+      <details key="end" value="1873"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%.2">
+      <details key="start" value="1876"/>
+      <details key="end" value="1877"/>
+      <details key="line" value="77"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/docker">
+      <details key="start" value="1790"/>
+      <details key="end" value="1808"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%.3">
+      <details key="start" value="1811"/>
+      <details key="end" value="1837"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateVirtualMachineDetailsPage/%.1/%.11/%.3/aVirtualMachine">
+      <details key="start" value="1811"/>
+      <details key="end" value="1826"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateVirtualMachineDetailsPage/%.1/%.12">
+      <details key="start" value="1888"/>
+      <details key="end" value="1929"/>
+      <details key="line" value="78"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateVirtualMachineDetailsPage/%.1/%.13">
+      <details key="start" value="215"/>
+      <details key="end" value="265"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%">
+      <details key="start" value="215"/>
+      <details key="end" value="255"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%/%">
+      <details key="start" value="215"/>
+      <details key="end" value="235"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%/%/aVirtualMachine">
+      <details key="start" value="215"/>
+      <details key="end" value="230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%/%.1">
+      <details key="start" value="247"/>
+      <details key="end" value="250"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%/%.2">
+      <details key="start" value="252"/>
+      <details key="end" value="254"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateVirtualMachineDetailsPage/%.1/%.13/%.1">
+      <details key="start" value="258"/>
+      <details key="end" value="265"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateVirtualMachineDetailsPage/%.1/%.14">
+      <details key="start" value="274"/>
+      <details key="end" value="281"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateVirtualMachineDetailsPage/%.2">
+      <details key="start" value="1938"/>
+      <details key="end" value="1939"/>
+      <details key="line" value="83"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateVirtualMachineDetailsPage/aVirtualMachine">
+      <details key="start" value="151"/>
+      <details key="end" value="183"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateContainerRow">
+      <details key="start" value="1953"/>
+      <details key="end" value="2658"/>
+      <details key="line" value="86"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateContainerRow/%">
+      <details key="start" value="2017"/>
+      <details key="end" value="2027"/>
+      <details key="line" value="87"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateContainerRow/%.1">
+      <details key="start" value="2028"/>
+      <details key="end" value="2043"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateContainerRow/%.1/aContainer">
+      <details key="start" value="2028"/>
+      <details key="end" value="2038"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateContainerRow/%.2">
+      <details key="start" value="2045"/>
+      <details key="end" value="2056"/>
+      <details key="line" value="88"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateContainerRow/%.3">
+      <details key="start" value="2057"/>
+      <details key="end" value="2070"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateContainerRow/%.3/aContainer">
+      <details key="start" value="2057"/>
+      <details key="end" value="2067"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateContainerRow/%.4">
+      <details key="start" value="2072"/>
+      <details key="end" value="2083"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateContainerRow/%.5">
+      <details key="start" value="2084"/>
+      <details key="end" value="2099"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateContainerRow/%.5/aContainer">
+      <details key="start" value="2084"/>
+      <details key="end" value="2094"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateContainerRow/%.6">
+      <details key="start" value="2101"/>
+      <details key="end" value="2115"/>
+      <details key="line" value="90"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateContainerRow/%.7">
+      <details key="start" value="2116"/>
+      <details key="end" value="2134"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateContainerRow/%.7/aContainer">
+      <details key="start" value="2116"/>
+      <details key="end" value="2126"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateContainerRow/%.8">
+      <details key="start" value="2136"/>
+      <details key="end" value="2150"/>
+      <details key="line" value="91"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateContainerRow/%.9">
+      <details key="start" value="2151"/>
+      <details key="end" value="2179"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateContainerRow/%.9/%">
+      <details key="start" value="2151"/>
+      <details key="end" value="2174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateContainerRow/%.9/%/aContainer">
+      <details key="start" value="2151"/>
+      <details key="end" value="2161"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateContainerRow/%.10">
+      <details key="start" value="2181"/>
+      <details key="end" value="2206"/>
+      <details key="line" value="93"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateContainerRow/%.11">
+      <details key="start" value="2207"/>
+      <details key="end" value="2265"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateContainerRow/%.11/%">
+      <details key="start" value="2207"/>
+      <details key="end" value="2255"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateContainerRow/%.11/%/%">
+      <details key="start" value="2207"/>
+      <details key="end" value="2235"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateContainerRow/%.11/%/%/%">
+      <details key="start" value="2207"/>
+      <details key="end" value="2230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateContainerRow/%.11/%/%/%/aContainer">
+      <details key="start" value="2207"/>
+      <details key="end" value="2217"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateContainerRow/%.11/%/%.1">
+      <details key="start" value="2247"/>
+      <details key="end" value="2250"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateContainerRow/%.11/%/%.2">
+      <details key="start" value="2252"/>
+      <details key="end" value="2254"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateContainerRow/%.11/%.1">
+      <details key="start" value="2258"/>
+      <details key="end" value="2265"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateContainerRow/%.12">
+      <details key="start" value="2267"/>
+      <details key="end" value="2298"/>
+      <details key="line" value="93"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateContainerRow/%.13">
+      <details key="start" value="2299"/>
+      <details key="end" value="2356"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateContainerRow/%.13/%">
+      <details key="start" value="2299"/>
+      <details key="end" value="2322"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateContainerRow/%.13/%/aContainer">
+      <details key="start" value="2299"/>
+      <details key="end" value="2309"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generateContainerRow/%.14">
+      <details key="start" value="2358"/>
+      <details key="end" value="2400"/>
+      <details key="line" value="95"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generateContainerRow/%.15">
+      <details key="start" value="2402"/>
+      <details key="end" value="2640"/>
+      <details key="line" value="98"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generateContainerRow/%.15/%">
+      <details key="start" value="2442"/>
+      <details key="end" value="2476"/>
+      <details key="line" value="98"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generateContainerRow/%.15/%.1">
+      <details key="start" value="2477"/>
+      <details key="end" value="2508"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/generateContainerRow/%.15/%.1/aContainer">
+      <details key="start" value="2477"/>
+      <details key="end" value="2487"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/generateContainerRow/%.15/%.2">
+      <details key="start" value="2510"/>
+      <details key="end" value="2525"/>
+      <details key="line" value="99"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/generateContainerRow/%.15/%.3">
+      <details key="start" value="2406"/>
+      <details key="end" value="2439"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/generateContainerRow/%.15/%.3/aContainer">
+      <details key="start" value="2407"/>
+      <details key="end" value="2417"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/generateContainerRow/%.15/%.4">
+      <details key="start" value="2533"/>
+      <details key="end" value="2635"/>
+      <details key="line" value="100"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/generateContainerRow/%.15/%.4/%">
+      <details key="start" value="2540"/>
+      <details key="end" value="2578"/>
+      <details key="line" value="101"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/generateContainerRow/%.15/%.4/%.1">
+      <details key="start" value="2579"/>
+      <details key="end" value="2610"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateContainerRow/%.15/%.4/%.1/aContainer">
+      <details key="start" value="2579"/>
+      <details key="end" value="2589"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateContainerRow/%.15/%.4/%.2">
+      <details key="start" value="2612"/>
+      <details key="end" value="2627"/>
+      <details key="line" value="101"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateContainerRow/%.16">
+      <details key="start" value="2641"/>
+      <details key="end" value="2646"/>
+      <details key="line" value="103"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/generateContainerRow/aContainer">
+      <details key="start" value="1992"/>
+      <details key="end" value="2014"/>
+      <details key="line" value="86"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/generateMicroserviceDetailsPage">
+      <details key="start" value="2660"/>
+      <details key="end" value="3393"/>
+      <details key="line" value="106"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/generateMicroserviceDetailsPage/%">
+      <details key="start" value="2740"/>
+      <details key="end" value="2742"/>
+      <details key="line" value="107"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/generateMicroserviceDetailsPage/%.1">
+      <details key="start" value="2762"/>
+      <details key="end" value="3379"/>
+      <details key="line" value="109"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/generateMicroserviceDetailsPage/%.1/%">
+      <details key="start" value="2836"/>
+      <details key="end" value="3038"/>
+      <details key="line" value="110"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/generateMicroserviceDetailsPage/%.1/%.1">
+      <details key="start" value="3039"/>
+      <details key="end" value="3057"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/generateMicroserviceDetailsPage/%.1/%.1/aMicroservice">
+      <details key="start" value="3039"/>
+      <details key="end" value="3052"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/generateMicroserviceDetailsPage/%.1/%.2">
+      <details key="start" value="3059"/>
+      <details key="end" value="3103"/>
+      <details key="line" value="122"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/generateMicroserviceDetailsPage/%.1/%.3">
+      <details key="start" value="3104"/>
+      <details key="end" value="3122"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/generateMicroserviceDetailsPage/%.1/%.3/aMicroservice">
+      <details key="start" value="3104"/>
+      <details key="end" value="3117"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/generateMicroserviceDetailsPage/%.1/%.4">
+      <details key="start" value="3124"/>
+      <details key="end" value="3191"/>
+      <details key="line" value="125"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/generateMicroserviceDetailsPage/%.1/%.5">
+      <details key="start" value="3192"/>
+      <details key="end" value="3210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/generateMicroserviceDetailsPage/%.1/%.5/aMicroservice">
+      <details key="start" value="3192"/>
+      <details key="end" value="3205"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/generateMicroserviceDetailsPage/%.1/%.6">
+      <details key="start" value="3212"/>
+      <details key="end" value="3257"/>
+      <details key="line" value="127"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/generateMicroserviceDetailsPage/%.1/%.7">
+      <details key="start" value="3258"/>
+      <details key="end" value="3276"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/generateMicroserviceDetailsPage/%.1/%.7/aMicroservice">
+      <details key="start" value="3258"/>
+      <details key="end" value="3271"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/generateMicroserviceDetailsPage/%.1/%.8">
+      <details key="start" value="3278"/>
+      <details key="end" value="3325"/>
+      <details key="line" value="128"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/generateMicroserviceDetailsPage/%.1/%.9">
+      <details key="start" value="3326"/>
+      <details key="end" value="3346"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/generateMicroserviceDetailsPage/%.1/%.9/aMicroservice">
+      <details key="start" value="3326"/>
+      <details key="end" value="3339"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/generateMicroserviceDetailsPage/%.1/%.10">
+      <details key="start" value="3348"/>
+      <details key="end" value="3371"/>
+      <details key="line" value="129"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/generateMicroserviceDetailsPage/%.1/%.11">
+      <details key="start" value="2769"/>
+      <details key="end" value="2817"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%">
+      <details key="start" value="2769"/>
+      <details key="end" value="2807"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%/%">
+      <details key="start" value="2769"/>
+      <details key="end" value="2787"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%/%/aMicroservice">
+      <details key="start" value="2769"/>
+      <details key="end" value="2782"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%/%.1">
+      <details key="start" value="2799"/>
+      <details key="end" value="2802"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%/%.2">
+      <details key="start" value="2804"/>
+      <details key="end" value="2806"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/generateMicroserviceDetailsPage/%.1/%.11/%.1">
+      <details key="start" value="2810"/>
+      <details key="end" value="2817"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/generateMicroserviceDetailsPage/%.1/%.12">
+      <details key="start" value="2826"/>
+      <details key="end" value="2833"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/generateMicroserviceDetailsPage/%.2">
+      <details key="start" value="3380"/>
+      <details key="end" value="3381"/>
+      <details key="line" value="132"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/generateMicroserviceDetailsPage/aMicroservice">
+      <details key="start" value="2709"/>
+      <details key="end" value="2737"/>
+      <details key="line" value="106"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

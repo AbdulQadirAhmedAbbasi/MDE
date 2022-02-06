@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:microservices="http://www.example.org/microservices" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_feCHsIW-Eey4irN88SgWVQ" selectedViews="_kHZ0oIXAEey4irN88SgWVQ" version="14.5.1.202106111100">
+    <semanticResources>bookingenvironment.microservices</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_m3JN0IW_Eey4irN88SgWVQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pkxRsIW_Eey4irN88SgWVQ" name="BookingSystemDiagram" repPath="#_pkioMIW_Eey4irN88SgWVQ" changeId="77796dc7-d677-4cfa-b637-4b0ae78764e8">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='']"/>
+        <target xmi:type="microservices:Environment" href="bookingenvironment.microservices#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_kHZ0oIXAEey4irN88SgWVQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_obRdkYXAEey4irN88SgWVQ" name="BookingSystemEnvironmentDiagram" repPath="#_obQ2gIXAEey4irN88SgWVQ" changeId="43a83f71-1ac0-4eb4-88a8-3c3ba9dedbf6">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']"/>
+        <target xmi:type="microservices:Environment" href="bookingenvironment.microservices#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_pkioMIW_Eey4irN88SgWVQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_plEzsIW_Eey4irN88SgWVQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_plEzsYW_Eey4irN88SgWVQ" type="Sirius" element="_pkioMIW_Eey4irN88SgWVQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_pliGsIW_Eey4irN88SgWVQ" type="2001" element="_plLhYIW_Eey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_pllxEIW_Eey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pllxEYW_Eey4irN88SgWVQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_plqpkIW_Eey4irN88SgWVQ" type="3003" element="_plWggIW_Eey4irN88SgWVQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_plqpkYW_Eey4irN88SgWVQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_plqpkoW_Eey4irN88SgWVQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pliGsYW_Eey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pliGsoW_Eey4irN88SgWVQ" width="30" height="30"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_plEzsoW_Eey4irN88SgWVQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_plZj0IW_Eey4irN88SgWVQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_plZj0YW_Eey4irN88SgWVQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_plLhYIW_Eey4irN88SgWVQ" name="Server1" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="microservices:ServerNode" href="bookingenvironment.microservices#//@ServerNodes.0"/>
+      <semanticElements xmi:type="microservices:ServerNode" href="bookingenvironment.microservices#//@ServerNodes.0"/>
+      <ownedStyle xmi:type="diagram:Square" uid="_plWggIW_Eey4irN88SgWVQ" labelSize="12" labelPosition="node">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_pkpV4IW_Eey4irN88SgWVQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='']/@defaultLayer"/>
+    <target xmi:type="microservices:Environment" href="bookingenvironment.microservices#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_obQ2gIXAEey4irN88SgWVQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_obSEoIXAEey4irN88SgWVQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_obSEoYXAEey4irN88SgWVQ" type="Sirius" element="_obQ2gIXAEey4irN88SgWVQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_obVvAIXAEey4irN88SgWVQ" type="2001" element="_obSrsIXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_obVvA4XAEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_obVvBIXAEey4irN88SgWVQ" x="-2" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_NzM_QIZvEeyhPp25tDVk3g" type="3005" element="_NymiUIZvEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_NzM_QYZvEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NzM_QoZvEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_obVvAYXAEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_obVvAoXAEey4irN88SgWVQ" x="473" y="-30" width="73" height="79"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_obWWEIXAEey4irN88SgWVQ" type="2001" element="_obTSwIXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_obWWE4XAEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_obWWFIXAEey4irN88SgWVQ" x="15" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1P7BQIZvEeyhPp25tDVk3g" type="3005" element="_1P0TlYZvEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_1P7BQYZvEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1P7BQoZvEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_obWWEYXAEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_obWWEoXAEey4irN88SgWVQ" x="456" y="102" width="86" height="85"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_obWWFYXAEey4irN88SgWVQ" type="2001" element="_obT50oXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_obW9IIXAEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_obW9IYXAEey4irN88SgWVQ" x="-20" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_4hlw4IZwEeyhPp25tDVk3g" type="3005" element="_4hK6IoZwEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_4hlw4YZwEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4hlw4oZwEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_obWWFoXAEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_obWWF4XAEey4irN88SgWVQ" x="324" y="246" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_obW9IoXAEey4irN88SgWVQ" type="2001" element="_obUg4oXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_obW9JYXAEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_obW9JoXAEey4irN88SgWVQ" x="-75" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AK0MEIZxEeyhPp25tDVk3g" type="3005" element="_AKe054ZxEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AK0MEYZxEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK0MEoZxEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_obW9I4XAEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_obW9JIXAEey4irN88SgWVQ" x="294" y="380" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_nuB1sIXDEey4irN88SgWVQ" type="2001" element="_nt7vEYXDEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_nuB1s4XDEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_nuB1tIXDEey4irN88SgWVQ" x="-20" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_4hmX8IZwEeyhPp25tDVk3g" type="3005" element="_4hK6JYZwEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_4hmX8YZwEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4hmX8oZwEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_nuB1sYXDEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nuB1soXDEey4irN88SgWVQ" x="478" y="246" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0cZlwIXDEey4irN88SgWVQ" type="2001" element="_0cRp-YXDEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_0caM0IXDEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0caM0YXDEey4irN88SgWVQ" x="-40" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AK0ME4ZxEeyhPp25tDVk3g" type="3005" element="_AKe06oZxEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AK0MFIZxEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK0MFYZxEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0cZlwYXDEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cZlwoXDEey4irN88SgWVQ" x="478" y="380" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_HilzgIXEEey4irN88SgWVQ" type="2001" element="_HilMcYXEEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_Hilzg4XEEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HilzhIXEEey4irN88SgWVQ" x="-20" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_4hmX84ZwEeyhPp25tDVk3g" type="3005" element="_4hK6KIZwEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_4hmX9IZwEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4hmX9YZwEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_HilzgYXEEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HilzgoXEEey4irN88SgWVQ" x="624" y="246" width="64" height="64"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_HilzhYXEEey4irN88SgWVQ" type="2001" element="_HilMeIXEEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_HilziIXEEey4irN88SgWVQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_HilziYXEEey4irN88SgWVQ" x="-39" y="-26"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AK0zIIZxEeyhPp25tDVk3g" type="3005" element="_AKe07YZxEeyhPp25tDVk3g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AK0zIYZxEeyhPp25tDVk3g" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AK0zIoZxEeyhPp25tDVk3g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_HilzhoXEEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hilzh4XEEey4irN88SgWVQ" x="678" y="380" width="64" height="64"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_obSEooXAEey4irN88SgWVQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_B7XdkIXKEey4irN88SgWVQ" type="4001" element="_B6y10IXKEey4irN88SgWVQ" source="_obVvAIXAEey4irN88SgWVQ" target="_obWWEIXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_B7YrsIXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B7YrsYXKEey4irN88SgWVQ" x="59" y="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_B7ZSwIXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B7ZSwYXKEey4irN88SgWVQ" x="-10" y="15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_B7ZSwoXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B7ZSw4XKEey4irN88SgWVQ" x="5" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_B7XdkYXKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_B7XdkoXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_B7Xdk4XKEey4irN88SgWVQ" points="[66, 109, -39, -339]$[66, 176, -39, -272]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B7dkMIXKEey4irN88SgWVQ" id="(-0.4794520547945205,-0.5283434232250963)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_B7dkMYXKEey4irN88SgWVQ" id="(1.0116279069767438,3.22920892494929)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JnFMEIXKEey4irN88SgWVQ" type="4001" element="_JnDW4IXKEey4irN88SgWVQ" source="_obWWEIXAEey4irN88SgWVQ" target="_obWWFYXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_JnFMFIXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFMFYXKEey4irN88SgWVQ" x="-97" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnFzIIXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFzIYXKEey4irN88SgWVQ" x="20" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnFzIoXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFzI4XKEey4irN88SgWVQ" x="-83" y="-5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JnFMEYXKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JnFMEoXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JnFME4XKEey4irN88SgWVQ" points="[107, -45, 105, -131]$[-6, -45, -8, -131]$[-6, 70, -8, -16]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnFzJIXKEey4irN88SgWVQ" id="(-1.1801070771289945,1.0627776208693867)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnFzJYXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JnFzJoXKEey4irN88SgWVQ" type="4001" element="_JnD98IXKEey4irN88SgWVQ" source="_obWWEIXAEey4irN88SgWVQ" target="_nuB1sIXDEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_JnFzKoXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFzK4XKEey4irN88SgWVQ" x="22" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnFzLIXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFzLYXKEey4irN88SgWVQ" x="6" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnFzLoXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnFzL4XKEey4irN88SgWVQ" x="2" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JnFzJ4XKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JnFzKIXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JnFzKYXKEey4irN88SgWVQ" points="[-39, -191, -6, -93]$[-39, -114, -6, -16]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnGaMIXKEey4irN88SgWVQ" id="(1.0116279069767438,3.22920892494929)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnGaMYXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JnGaMoXKEey4irN88SgWVQ" type="4001" element="_JnD99YXKEey4irN88SgWVQ" source="_obWWEIXAEey4irN88SgWVQ" target="_HilzgIXEEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_JnGaNoXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnGaN4XKEey4irN88SgWVQ" x="-92" y="36"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnGaOIXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnGaOYXKEey4irN88SgWVQ" x="-27" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JnGaOoXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JnGaO4XKEey4irN88SgWVQ" x="16"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JnGaM4XKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JnGaNIXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JnGaNYXKEey4irN88SgWVQ" points="[-6, -232, -119, -134]$[105, -232, -8, -134]$[105, -114, -8, -16]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnGaPIXKEey4irN88SgWVQ" id="(1.0116279069767438,3.22920892494929)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JnGaPYXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_QpqeAIXKEey4irN88SgWVQ" type="4001" element="_QpL86oXKEey4irN88SgWVQ" source="_obWWFYXAEey4irN88SgWVQ" target="_obW9IoXAEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_QpqeBIXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeBYXKEey4irN88SgWVQ" x="19" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QpqeBoXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeB4XKEey4irN88SgWVQ" x="27"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QpqeCIXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeCYXKEey4irN88SgWVQ" x="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QpqeAYXKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QpqeAoXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QpqeA4XKEey4irN88SgWVQ" points="[-32, 0, -2, -134]$[-34, 0, -4, -134]$[-34, 103, -4, -31]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QpqeCoXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QpqeC4XKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_QpqeDIXKEey4irN88SgWVQ" type="4001" element="_QpL874XKEey4irN88SgWVQ" source="_nuB1sIXDEey4irN88SgWVQ" target="_0cZlwIXDEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_QpqeEIXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeEYXKEey4irN88SgWVQ" x="31" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QpqeEoXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeE4XKEey4irN88SgWVQ" x="4" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QpqeFIXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QpqeFYXKEey4irN88SgWVQ" x="3" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QpqeDYXKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QpqeDoXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QpqeD4XKEey4irN88SgWVQ" points="[-1, 22, -1, -112]$[-1, 102, -1, -32]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QprFEIXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QprFEYXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_QprFEoXKEey4irN88SgWVQ" type="4001" element="_QpMj8oXKEey4irN88SgWVQ" source="_HilzgIXEEey4irN88SgWVQ" target="_HilzhYXEEey4irN88SgWVQ">
+          <children xmi:type="notation:Node" xmi:id="_QprFFoXKEey4irN88SgWVQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QprFF4XKEey4irN88SgWVQ" x="-12" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QprFGIXKEey4irN88SgWVQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QprFGYXKEey4irN88SgWVQ" x="21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_QprFGoXKEey4irN88SgWVQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QprFG4XKEey4irN88SgWVQ" x="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_QprFE4XKEey4irN88SgWVQ" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_QprFFIXKEey4irN88SgWVQ" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QprFFYXKEey4irN88SgWVQ" points="[28, -1, -24, -137]$[28, 102, -24, -34]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QprFHIXKEey4irN88SgWVQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QprFHYXKEey4irN88SgWVQ" id="(0.4815950920245399,0.5392857142857143)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_obVH8oXAEey4irN88SgWVQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_obVH84XAEey4irN88SgWVQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_obSrsIXAEey4irN88SgWVQ" name="Server1" outgoingEdges="_B6y10IXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:ServerNode" href="bookingenvironment.microservices#//@ServerNodes.0"/>
+      <semanticElements xmi:type="microservices:ServerNode" href="bookingenvironment.microservices#//@ServerNodes.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_NymiUIZvEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Server.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Server']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Server']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_obTSwIXAEey4irN88SgWVQ" name="VM1" outgoingEdges="_JnDW4IXKEey4irN88SgWVQ _JnD98IXKEey4irN88SgWVQ _JnD99YXKEey4irN88SgWVQ" incomingEdges="_B6y10IXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:VirtualMachine" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0"/>
+      <semanticElements xmi:type="microservices:VirtualMachine" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_1P0TlYZvEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/VirtualMachine.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='VM']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='VM']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_obT50oXAEey4irN88SgWVQ" name="Container1" outgoingEdges="_QpL86oXKEey4irN88SgWVQ" incomingEdges="_JnDW4IXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.0"/>
+      <semanticElements xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4hK6IoZwEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Container.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_nt7vEYXDEey4irN88SgWVQ" name="Container2" outgoingEdges="_QpL874XKEey4irN88SgWVQ" incomingEdges="_JnD98IXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.1"/>
+      <semanticElements xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4hK6JYZwEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Container.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_HilMcYXEEey4irN88SgWVQ" name="Container3" outgoingEdges="_QpMj8oXKEey4irN88SgWVQ" incomingEdges="_JnD99YXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.2"/>
+      <semanticElements xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_4hK6KIZwEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Container.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Container']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_obUg4oXAEey4irN88SgWVQ" name="UserManagementService" incomingEdges="_QpL86oXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.0/@Microservice"/>
+      <semanticElements xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.0/@Microservice"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_AKe054ZxEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Microservice.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_0cRp-YXDEey4irN88SgWVQ" name="AnalyticsService" incomingEdges="_QpL874XKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.1/@Microservice"/>
+      <semanticElements xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.1/@Microservice"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_AKe06oZxEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Microservice.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_HilMeIXEEey4irN88SgWVQ" name="PaymernService" incomingEdges="_QpMj8oXKEey4irN88SgWVQ" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.2/@Microservice"/>
+      <semanticElements xmi:type="microservices:Microservice" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.2/@Microservice"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_AKe07YZxEeyhPp25tDVk3g" labelSize="11" workspacePath="/microservices.project.design/newicons/Microservice.png">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@nodeMappings[name='Microservice']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_B6y10IXKEey4irN88SgWVQ" sourceNode="_obSrsIXAEey4irN88SgWVQ" targetNode="_obTSwIXAEey4irN88SgWVQ">
+      <target xmi:type="microservices:ServerNode" href="bookingenvironment.microservices#//@ServerNodes.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_B61SEIXKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='serverHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_B61SEYXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='serverHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JnDW4IXKEey4irN88SgWVQ" sourceNode="_obTSwIXAEey4irN88SgWVQ" targetNode="_obT50oXAEey4irN88SgWVQ">
+      <target xmi:type="microservices:VirtualMachine" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JnDW4YXKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JnDW4oXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JnD98IXKEey4irN88SgWVQ" sourceNode="_obTSwIXAEey4irN88SgWVQ" targetNode="_nt7vEYXDEey4irN88SgWVQ">
+      <target xmi:type="microservices:VirtualMachine" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JnD98YXKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JnD98oXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JnD99YXKEey4irN88SgWVQ" sourceNode="_obTSwIXAEey4irN88SgWVQ" targetNode="_HilMcYXEEey4irN88SgWVQ">
+      <target xmi:type="microservices:VirtualMachine" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JnD99oXKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JnD994XKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='vmHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QpL86oXKEey4irN88SgWVQ" sourceNode="_obT50oXAEey4irN88SgWVQ" targetNode="_obUg4oXAEey4irN88SgWVQ">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QpL864XKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QpL87IXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QpL874XKEey4irN88SgWVQ" sourceNode="_nt7vEYXDEey4irN88SgWVQ" targetNode="_0cRp-YXDEey4irN88SgWVQ">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QpL88IXKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QpL88YXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_QpMj8oXKEey4irN88SgWVQ" sourceNode="_HilMcYXEEey4irN88SgWVQ" targetNode="_HilMeIXEEey4irN88SgWVQ">
+      <target xmi:type="microservices:Container" href="bookingenvironment.microservices#//@ServerNodes.0/@VirtualMachines.0/@Containers.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_QpMj84XKEey4irN88SgWVQ" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_QpMj9IXKEey4irN88SgWVQ" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer/@edgeMappings[name='containerHas']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_obRdkIXAEey4irN88SgWVQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/microservices.project.design/description/project.odesign#//@ownedViewpoints[name='Environment']/@ownedRepresentations[name='Environment%20Diagram']/@defaultLayer"/>
+    <target xmi:type="microservices:Environment" href="bookingenvironment.microservices#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

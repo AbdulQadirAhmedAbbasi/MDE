@@ -1,0 +1,58 @@
+-- @path MM=/Microservices/model/microservices.ecore
+-- @path OUTMM=/RefinedMicroservices/model/refinedMicroservices.ecore
+
+module Microservices2RefinedMicroservices;
+create OUT : OUTMM from IN : MM;
+
+helper def : getIDFromName(name : String): String = name + '_ID'; 
+
+rule Environment2Environment {
+   from 
+   	   src : MM!Environment
+   to 
+   	   trg : OUTMM!Environment (
+       		id <- thisModule.getIDFromName(src.name),
+   	   		name <- src.name,
+			Type <- src.Type,
+			Nodes <- src.ServerNodes
+	   )
+ }
+
+rule ServerNode2Node {
+   from 
+   	   src : MM!ServerNode
+   to 
+   	   trg : OUTMM!Node (
+       		id <- thisModule.getIDFromName(src.name),
+   	   		name <- src.name,
+			RAM <- src.RAM,
+			Processor <- src.Processor,
+			Disk <- src.Disk,
+			Dockers <- src.VirtualMachines -> collect(vm | vm.Containers) -> flatten()
+	   )
+ }
+
+rule Container2Docker {
+   from 
+   	   src : MM!Container
+   to 
+   	   trg : OUTMM!Docker (
+       		id <- thisModule.getIDFromName(src.name),
+   	   		name <- src.name,
+			IPv4 <- src.IP,
+			Port <- src.Port,
+			Microservice <- src.Microservice
+	   )
+ }
+
+rule Microservice2Microservice {
+   from 
+   	   src : MM!Microservice
+   to 
+   	   trg : OUTMM!Microservice (
+       		id <- thisModule.getIDFromName(src.name),
+   	   		name <- src.name,
+			Health <- src.Health,
+			JsonString <- '{}'
+	   )
+ }

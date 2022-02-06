@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<microservices:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:microservices="http://www.example.org/microservices"
+    xsi:schemaLocation="http://www.example.org/microservices microservices.ecore"
+    name="BuildingManagementSystem.Test"
+    Location="Bahrain"
+    Type="Test">
+  <ServerNodes
+      name="Server1"
+      RAM="6 GB"
+      Processor="2.4 GHz"
+      Disk="10 GB">
+    <VirtualMachines
+        name="VM1"
+        Type="Windows">
+      <Containers
+          name="Container1"
+          IP="172.10.20.20"
+          Port="8081">
+        <Microservice
+            name="AuthorizationService"
+            Health="true"/>
+      </Containers>
+      <Containers
+          name="Container2"
+          IP="172.10.20.30"
+          Port="8082">
+        <Microservice
+            name="IOTGateway"
+            Health="true"/>
+      </Containers>
+    </VirtualMachines>
+  </ServerNodes>
+</microservices:Environment>

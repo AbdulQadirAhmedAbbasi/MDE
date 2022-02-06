@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<microservices:Environment
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:microservices="http://www.example.org/microservices"
+    xsi:schemaLocation="http://www.example.org/microservices microservices.ecore"
+    name="BookingSystem.Prod"
+    Location="Rome"
+    Type="Production">
+  <ServerNodes
+      name="Server1"
+      RAM="10 GB"
+      Processor="2.4 GHz"
+      Disk="60 GB">
+    <VirtualMachines
+        name="VM1">
+      <Containers
+          name="Container1"
+          IP="192.168.1.10"
+          Port="8080">
+        <Microservice
+            name="UserManagementService"
+            Health="true"/>
+      </Containers>
+      <Containers
+          name="Container2"
+          IP="192.168.1.20"
+          Port="8081">
+        <Microservice
+            name="PaymentService"
+            Health="true"
+            Type="External"/>
+      </Containers>
+      <Containers
+          name="Container3"
+          IP="192.168.1.30"
+          Port="8082">
+        <Microservice
+            name="AnalyticsService"
+            Health="true"/>
+      </Containers>
+    </VirtualMachines>
+  </ServerNodes>
+</microservices:Environment>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Microservices/src" modelPluginID="Microservices"
+    modelName="Microservices" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>microservices.ecore</foreignModel>
+  <genPackages prefix="Microservices" disposableProviderFactory="true" ecorePackage="microservices.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="microservices.ecore#//EnvironmentType">
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//EnvironmentType/Development"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//EnvironmentType/Test"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//EnvironmentType/UAT"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//EnvironmentType/Demo"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//EnvironmentType/Production"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="microservices.ecore#//MicroserviceType">
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//MicroserviceType/Internal"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//MicroserviceType/External"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="microservices.ecore#//VMType">
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//VMType/Linux"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//VMType/RedHat"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//VMType/Windows"/>
+      <genEnumLiterals ecoreEnumLiteral="microservices.ecore#//VMType/CentOS"/>
+    </genEnums>
+    <genClasses ecoreClass="microservices.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="microservices.ecore#//Environment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Environment/Location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Environment/Type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference microservices.ecore#//Environment/ServerNodes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="microservices.ecore#//ServerNode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//ServerNode/RAM"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//ServerNode/Processor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//ServerNode/Disk"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference microservices.ecore#//ServerNode/VirtualMachines"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="microservices.ecore#//VirtualMachine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//VirtualMachine/Type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference microservices.ecore#//VirtualMachine/Containers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//VirtualMachine/TotalMicroservices"/>
+      <genOperations ecoreOperation="microservices.ecore#//VirtualMachine/isNotEmpty"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="microservices.ecore#//Container">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Container/IP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Container/Port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference microservices.ecore#//Container/Microservice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Container/BaseURI"/>
+      <genOperations ecoreOperation="microservices.ecore#//Container/isMicroserviceLive"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="microservices.ecore#//Microservice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Microservice/Health"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute microservices.ecore#//Microservice/Type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

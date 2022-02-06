@@ -1,0 +1,27 @@
+environment BookingSystemProduction{
+	id = "1"; name = "BookingSystem.Prod"; type = Production; location = "Rome";
+	serverNodes = {
+		node server1 {
+			id = "1"; name = "Name"; RAM = "Name"; Processor = ""; Disk = "Name";
+			virtualMachines = {
+				vm vm1 {
+					id = "1"; name = "vm1"; type =  Linux;
+					containers = {
+						docker docker1 {
+							id = "1"; name = "docker1"; IP = "192.168.1.20"; Port = 8081;
+							Microservice = service PaymentService {
+								id = "1"; name = "Payment"; type = Internal;
+							};
+						},
+						docker docker2 {
+							id = "2"; name = "docker2"; IP = "192.168.1.21"; Port = 8082;
+							Microservice = service AnalyticsService {
+								id = "1"; name = "Analytics"; type = Internal;
+							};
+						}
+					};
+				}
+			};
+		}
+	};	
+}

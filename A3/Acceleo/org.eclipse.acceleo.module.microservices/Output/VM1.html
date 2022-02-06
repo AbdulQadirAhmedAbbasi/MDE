@@ -1,0 +1,113 @@
+		<head>
+			<style>
+				table, th, td {
+				  border: 1px solid black;
+				}
+				label {
+				  font-weight:bold
+				}
+				h1 {
+			   	  width:500px;
+			      margin: 0 auto;
+			      background: gray;
+			      text-align: center;
+				}
+				a.button {
+				    -webkit-appearance: button;
+				    -moz-appearance: button;
+				    appearance: button;
+				
+				    text-decoration: none;
+				    color: initial;
+					background: gray;
+					float: right;
+					margin-left: 5px;
+					border-radius: 3px;
+					padding: 5px;
+				}
+				.red-dot 
+				{
+				   height: 10px;
+				   width: 10px;
+				   background-color: red;
+				   border-radius: 50%;
+				   display: inline-block;
+				}
+				.green-dot 
+				{
+				   height: 10px;
+				   width: 10px;
+				   background-color: green;
+				   border-radius: 50%;
+				   display: inline-block;
+				}
+			</style>	
+			<title>VM1 Details</title>
+		</head>
+		<body>
+			<h1>"VM1" Vitual Machine
+			<h2>Details</h2>
+			<label>Name : </label> <span>VM1</span> <br>
+			<label>Type : </label> <span>Linux</span> <br>
+			<div>It consists of <strong>3</strong> microservice/s.</div>
+
+	 		<h2>Containers</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>IP</th>
+						<th>Port</th>
+						<th>BaseURI</th>
+						<th>Microservice</th>
+						<th>isMicroserviceLive</th>
+					<tr>
+				</thead>
+				<tbody>
+					
+					<tr>
+						<td>Container1</td>
+						<td>192.168.1.10</td>
+						<td>8080</td>
+					    <td>http://192.168.1.10:8080</td>
+						<td>
+							UserManagementService<a target="_blank" href="UserManagementService.html" class="button">Details</a>
+								
+								
+						</td>
+						
+						<td style="text-align:center">
+								<span class="green-dot" title="true"></span></td>
+					</tr>
+					<tr>
+						<td>Container2</td>
+						<td>192.168.1.20</td>
+						<td>8081</td>
+					    <td>http://192.168.1.20:8081</td>
+						<td>
+							PaymentService<a target="_blank" href="PaymentService.html" class="button">Details</a>
+								
+								
+						</td>
+						
+						<td style="text-align:center">
+								<span class="green-dot" title="true"></span></td>
+					</tr>
+					<tr>
+						<td>Container3</td>
+						<td>192.168.1.30</td>
+						<td>8082</td>
+					    <td>http://192.168.1.30:8082</td>
+						<td>
+							AnalyticsService<a target="_blank" href="AnalyticsService.html" class="button">Details</a>
+								
+								
+						</td>
+						
+						<td style="text-align:center">
+								<span class="green-dot" title="true"></span></td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</body>

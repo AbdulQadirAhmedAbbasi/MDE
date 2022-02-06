@@ -1,0 +1,112 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://www.example.org/microservices')]
+[import org::eclipse::acceleo::module::microservices::main::generateDetailsPage /]
+
+[**
+ * The documentation of the template generateElement.
+ * @param anEnvironment
+ */]
+[template public generateElement(anEnvironment : Environment)]
+	
+	[comment @main/]
+	[file (anEnvironment.name.replaceAll('', ' ') + '.html', false, 'UTF-8')]
+	<html>
+		  	<head>
+				<style>
+					table, th, td {
+					  border: 1px solid black;
+					}
+					label {
+					  font-weight:bold
+					}
+					h1 {
+				   	  width:500px;
+				      margin: 0 auto;
+				      background: gray;
+				      text-align: center;
+					}
+					a.button {
+					    -webkit-appearance: button;
+					    -moz-appearance: button;
+					    appearance: button;
+					
+					    text-decoration: none;
+					    color: initial;
+						background: gray;
+						float: right;
+						margin-left: 5px;
+						border-radius: 3px;
+						padding: 5px;
+					}
+					.red-dot 
+					{
+					   height: 10px;
+					   width: 10px;
+					   background-color: red;
+					   border-radius: 50%;
+					   display: inline-block;
+					}
+					.green-dot 
+					{
+					   height: 10px;
+					   width: 10px;
+					   background-color: green;
+					   border-radius: 50%;
+					   display: inline-block;
+					}
+				</style>
+				<title>[anEnvironment.name/] Home</title>
+			</head>
+			<body>
+				<h1>Microservices Archictecture used for "[anEnvironment.name/]" Application
+				<h2>Details</h2>
+				<label>Name : </label> <span>[anEnvironment.name/]</span> <br>
+				<label>Type : </label> <span>[anEnvironment.Type/]</span> <br>
+				<label>Location : </label> <span>[anEnvironment.Location/]</span> <br>
+				<div>It consists of <strong>[anEnvironment.ServerNodes->size()/]</strong> server/s.</div>
+	
+		 		<h2>Servers</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>RAM</th>
+							<th>Processor</th>
+							<th>Disk</th>
+							<th>Total Virtual Machines</th>
+							<th>Virtual Machines</th>
+						<tr>
+					</thead>
+					<tbody>
+						
+					[for (node : ServerNode | anEnvironment.ServerNodes)]
+						[generateServerRow(node)/]
+					[/for]
+						
+					</tbody>
+				</table>
+			</body>
+	</html>
+	[/file]
+
+[/template]
+
+
+[template private generateServerRow(aServerNode : ServerNode)]
+<tr>
+	<td>[aServerNode.name/]</td>
+	<td>[aServerNode.RAM/]</td>
+	<td>[aServerNode.Processor/]</td>
+    <td>[aServerNode.Disk/]</td>
+    <td>[aServerNode.VirtualMachines -> size()/]</td>
+	<td>
+	    [for (vm : VirtualMachine | aServerNode.VirtualMachines)]
+			[vm.name/]<a target="_blank" href="[vm.name.replaceAll(' ', '') + '.html'/]" class="button">Details</a>
+			[vm.generateVirtualMachineDetailsPage()/]
+		[/for]
+	</td>
+</tr>
+[/template]

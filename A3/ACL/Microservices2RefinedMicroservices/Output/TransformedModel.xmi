@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<refinedMicroservices:Environment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:refinedMicroservices="http://www.example.org/refinedMicroservices" name="BookingSystem.Prod" id="BookingSystem.Prod_ID" Type="Production">
+  <Nodes name="Server1" id="Server1_ID" RAM="10 GB" Processor="2.4 GHz" Disk="60 GB">
+    <Dockers name="Container1" id="Container1_ID" IPv4="192.168.1.10" Port="8080">
+      <Microservice name="UserManagementService" id="UserManagementService_ID" JsonString="{}" Health="true"/>
+    </Dockers>
+    <Dockers name="Container2" id="Container2_ID" IPv4="192.168.1.20" Port="8081">
+      <Microservice name="PaymentService" id="PaymentService_ID" JsonString="{}" Health="true"/>
+    </Dockers>
+    <Dockers name="Container3" id="Container3_ID" IPv4="192.168.1.30" Port="8082">
+      <Microservice name="AnalyticsService" id="AnalyticsService_ID" JsonString="{}" Health="true"/>
+    </Dockers>
+  </Nodes>
+</refinedMicroservices:Environment>
